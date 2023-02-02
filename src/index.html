@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <title>FORM VALIDATION</title>
+</head>
+<body>
+    <h1>
+        FORM VALIDATION
+    </h1>
+<div class="form">
+    <form id="form" method="post" action="">
+    <div class="form__input-container" >
+        <label for="userName" title="The name must have at least 2 characters and can only contain letters. Max 50 characters." id="userNameLabel">User Name:</label>
+        <input type="text" id="userName" name="userName" required ></input>
+    </div>
+    <div class="form__input-container">
+        <label for="email" title=" The email must be in a valid format (e.g. example@example.com)." id="emailLabel">Email:</label>
+        <input type="email" id="email" name="email" required></input>
+    </div>
+    <div class="form__input-container">
+        <label for="password" id="passwordLabel" title="The password must be at least 8 characters long and must contain at least 1 number and 1 special character (!, @, #, $, %, ^, &, *).">Password:</label>
+        <input type="password" id="password" name="password" required ></input>
+    </div>
+
+        <input type="submit" value="Submit" id="submit"/>
+
+    </form>
+    <p class="form__submit-status"></p>
+</div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+   <script src="scripts.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>
